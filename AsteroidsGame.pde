@@ -1,4 +1,4 @@
-Spaceship elon = new Spaceship ();
+Spaceship BOB = new Spaceship ();
 Star [] nightSky = new Star [1000];
 Asteroid [] rockFly = new Asteroid [50];
 public void setup() 
@@ -25,34 +25,34 @@ public void draw()
    rockFly[k].show();
    rockFly[k].move();
  }  
- elon.show();
- elon.move();
+ BOB.show();
+ BOB.move();
 }
 public void keyTyped()
 {
   if(key == ' ')
   {
-    elon.setDirectionX(0);
-    elon.setDirectionY(0);
-    elon.setPointDirection((int)(Math.random()*360));
-    elon.setX((int)(Math.random()*500));
-    elon.setY((int)(Math.random()*500));
+    BOB.setDirectionX(0);
+    BOB.setDirectionY(0);
+    BOB.setPointDirection((int)(Math.random()*360));
+    BOB.setX((int)(Math.random()*500));
+    BOB.setY((int)(Math.random()*500));
   }
   if(key == 'w')
   {
-    elon.accelerate(0.3);
+    BOB.accelerate(0.3);
   }
   if(key == 'a')
   {
-    elon.turn(-10);
+    BOB.turn(-10);
   }
   if(key == 'd')
   {
-    elon.turn(10);
+    BOB.turn(10);
   }
   if(key == 's')
   {
-    elon.accelerate(-0.3);
+    BOB.accelerate(-0.3);
   }  
 
 }
